@@ -1,4 +1,4 @@
-package visualnut.challenge;
+package visualnut.challenge.ex1;
 
 public abstract class AbstractEvaluator {
     private Evaluator evaluator;
@@ -11,5 +11,4 @@ public abstract class AbstractEvaluator {
         this.evaluator = evaluator;
     }
 
-    
 }

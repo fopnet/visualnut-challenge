@@ -1,4 +1,4 @@
-package visualnut.challenge;
+package visualnut.challenge.ex1;
 
 public class DividedBy1 extends AbstractEvaluator implements Evaluator {
 
@@ -11,5 +11,5 @@ public class DividedBy1 extends AbstractEvaluator implements Evaluator {
     public String getContent(int dividend) {
         return String.valueOf(dividend);
     }
-    
+
 }

@@ -1,12 +1,12 @@
-package visualnut.challenge;
+package visualnut.challenge.ex1;
 
-public class DividedBy5  extends AbstractEvaluator implements Evaluator {
+public class DividedBy5 extends AbstractEvaluator implements Evaluator {
 
     @Override
     public boolean isDivided(int dividend) {
         return dividedBy(dividend, 5);
     }
- 
+
     @Override
     public String getContent(int dividend) {
         return "Nuts";
