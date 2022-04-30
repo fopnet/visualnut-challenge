@@ -1,6 +1,9 @@
-package visualnut.challenge.ex1;
+package visualnut.challenge.apps;
 
 import java.util.stream.IntStream;
+
+import visualnut.challenge.ex1.DividedChain;
+import visualnut.challenge.ex1.Evaluator;
 
 public class Ex1 {
     public static void main(String[] args) {
