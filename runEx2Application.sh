@@ -1,0 +1,1 @@
+./mvnw spring-boot:run -Dstart-class=visualnut.challenge.apps.Ex2Application

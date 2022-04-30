@@ -1,1 +1,1 @@
-./mvnw spring-boot:run -Dspring-boot.run.arguments=100
+./mvnw spring-boot:run -Dspring-boot.run.arguments=100 -Dstart-class=visualnut.challenge.apps.Ex1Application
