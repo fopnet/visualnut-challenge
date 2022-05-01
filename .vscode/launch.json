@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex2Application",
+            "request": "launch",
+            "mainClass": "visualnut.challenge.apps.Ex2Application",
+            "projectName": "Ex1"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
