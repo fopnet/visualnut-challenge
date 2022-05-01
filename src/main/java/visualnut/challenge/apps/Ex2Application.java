@@ -33,14 +33,6 @@ public class Ex2Application {
                     Country[].class);
 
             ctx.getBean(CountryServiceImpl.class).setCountries(Arrays.asList(customers));
-            /*
-            List<String> beans = Arrays.stream(ctx.getBeanDefinitionNames())
-                    .sorted(Comparator.naturalOrder())
-                    .collect(Collectors.toList());
-            
-            beans.forEach(x -> System.out.println(x));
-            */
-            //print customer details
 
         };
     }

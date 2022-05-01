@@ -6,24 +6,26 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Ex2Application",
+            "name": "Launch Ex1Application",
+            "request": "launch",
+            "mainClass": "visualnut.challenge.apps.Ex1Application",
+            "projectName": "Ex1",
+            "args": "100"
+        },
+        {
+            "type": "java",
+            "name": "Ex1 Application",
+            "request": "launch",
+            "mainClass": "visualnut.challenge.apps.Ex1Application",
+            "projectName": "Ex1Application",
+            "args": "100"
+        },
+        {
+            "type": "java",
+            "name": "Ex2 Application",
             "request": "launch",
             "mainClass": "visualnut.challenge.apps.Ex2Application",
             "projectName": "Ex1"
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Launch Ex1",
-            "request": "launch",
-            "mainClass": "visualnut.challenge.Ex1",
-            "projectName": "visualNut_c75674a9",
-            "args": "100"
         }
     ]
 }

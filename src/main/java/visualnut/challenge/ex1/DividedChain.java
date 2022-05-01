@@ -1,7 +1,5 @@
 package visualnut.challenge.ex1;
 
-import visualnut.challenge.ex1.DividedBy1;
-
 public class DividedChain {
 
     public Evaluator chain() {

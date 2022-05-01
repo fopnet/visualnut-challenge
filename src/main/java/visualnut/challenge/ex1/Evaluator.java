@@ -1,5 +1,9 @@
 package visualnut.challenge.ex1;
 
+import java.util.Arrays;
+import java.util.Optional;
+import java.util.stream.Stream;
+
 public abstract interface Evaluator {
     default boolean dividedBy(int dividend, int divisor) {
         return dividend % divisor == 0;
