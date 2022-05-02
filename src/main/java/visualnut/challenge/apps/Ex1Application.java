@@ -1,7 +1,5 @@
 package visualnut.challenge.apps;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.stream.IntStream;
 
 import org.springframework.boot.CommandLineRunner;
@@ -9,10 +7,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-import visualnut.challenge.ex1Application.PredicateEvaluator;
+import lombok.extern.slf4j.Slf4j;
+import visualnut.challenge.ex1Application.PredicateEvaludatorList;
 
+@Configuration
 @SpringBootApplication(scanBasePackages = { "visualnut.challenge.apps.ex1Application" })
+@Slf4j
 public class Ex1Application {
 
 	public static void main(String[] args) {
@@ -20,36 +22,35 @@ public class Ex1Application {
 	}
 
 	@Bean
+	public PredicateEvaludatorList predicateEvaludatorList() {
+		return new PredicateEvaludatorList();
+	}
+
+	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
-			System.out.println("Running Ex1Application using new algorithm... ");
+			log.info("\nRunning Ex1Application using new algorithm... \n");
 
 			if (args.length == 0) {
-				System.err.println("Please, inform a maximum number");
+				log.error("Please, inform a maximum number \n");
 				return;
 			}
 
-			PredicateEvaluator eval15 = new PredicateEvaluator(15, "Visual Nuts");
-			PredicateEvaluator eval3 = new PredicateEvaluator(3, "Visual");
-			PredicateEvaluator eval5 = new PredicateEvaluator(5, "Nuts");
-			PredicateEvaluator eval1 = new PredicateEvaluator(1, "") {
-				@Override
-				public String getContent(int divident) {
-					return String.valueOf(divident);
-				}
-			};
-
-			List<PredicateEvaluator> evaluators = Arrays.asList(eval15, eval3, eval5, eval1);
-
 			int max = Integer.parseInt(args[0]);
+			// List<String> beans = Arrays.stream(ctx.getBeanDefinitionNames())
+			// 		.sorted(Comparator.naturalOrder())
+			// 		.collect(Collectors.toList());
+
+			// beans.forEach(System.out::println);
+
+			PredicateEvaludatorList bean = ctx.getBean(PredicateEvaludatorList.class);
+
 			IntStream.range(1, max + 1).forEach(num -> {
 
-				String content = evaluators.stream().filter(e -> e.test(num)).findFirst().map(e -> e.getContent(num))
-						.orElse("");
+				String content = bean.getContent(num);
 
-				System.out.printf("%s: %s\n", String.format("%" + 3 + "s", num), content);
+				log.trace(String.format("%" + 3 + "s: %s%n", num, content));
 			});
-
 
 		};
 	}

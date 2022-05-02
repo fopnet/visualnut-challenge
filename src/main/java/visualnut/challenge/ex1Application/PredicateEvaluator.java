@@ -1,6 +1,6 @@
 package visualnut.challenge.ex1Application;
 
-import java.util.function.Predicate;
+import java.util.function.IntPredicate;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -10,7 +10,7 @@ import lombok.Setter;
 
 @AllArgsConstructor
 @Data
-public class PredicateEvaluator implements Predicate<Integer> {
+public class PredicateEvaluator implements IntPredicate {
 
     private int divisor;
 
@@ -22,7 +22,8 @@ public class PredicateEvaluator implements Predicate<Integer> {
         return content;
     }
 
-    public boolean test(Integer dividend) {
+    @Override
+    public boolean test(int dividend) {
         return dividend % divisor == 0;
     }
 }
