@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import visualnut.challenge.apps.Ex2Application;
-import visualnut.challenge.ex2.model.Country;
+import visualnut.challenge.ex2Application.model.Country;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = Ex2Application.class)

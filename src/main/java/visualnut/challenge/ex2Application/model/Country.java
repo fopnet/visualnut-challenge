@@ -1,4 +1,4 @@
-package visualnut.challenge.ex2.model;
+package visualnut.challenge.ex2Application.model;
 
 import java.util.List;
 

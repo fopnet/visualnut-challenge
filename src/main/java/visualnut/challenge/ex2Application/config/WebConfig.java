@@ -1,4 +1,4 @@
-package visualnut.challenge.ex2.config;
+package visualnut.challenge.ex2Application.config;
 
 import java.util.Locale;
 

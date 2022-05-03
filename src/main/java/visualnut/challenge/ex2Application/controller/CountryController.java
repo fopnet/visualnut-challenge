@@ -1,4 +1,4 @@
-package visualnut.challenge.ex2.controller;
+package visualnut.challenge.ex2Application.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import visualnut.challenge.ex2.model.Country;
-import visualnut.challenge.ex2.service.CountryService;
+import visualnut.challenge.ex2Application.model.Country;
+import visualnut.challenge.ex2Application.service.CountryService;
 
 @RestController
 @RequestMapping("/countries")

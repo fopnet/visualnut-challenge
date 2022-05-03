@@ -18,7 +18,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.web.client.RestTemplate;
 
 import visualnut.challenge.apps.Ex2Application;
-import visualnut.challenge.ex2.model.Country;
+import visualnut.challenge.ex2Application.model.Country;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = Ex2Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

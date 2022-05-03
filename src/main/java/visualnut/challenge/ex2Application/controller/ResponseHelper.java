@@ -1,4 +1,4 @@
-package visualnut.challenge.ex2.controller;
+package visualnut.challenge.ex2Application.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

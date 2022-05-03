@@ -10,10 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
-import visualnut.challenge.ex2.model.Country;
-import visualnut.challenge.ex2.service.impl.CountryServiceImpl;
+import visualnut.challenge.ex2Application.model.Country;
+import visualnut.challenge.ex2Application.service.impl.CountryServiceImpl;
 
-@SpringBootApplication(scanBasePackages = { "visualnut.challenge.ex2" })
+@SpringBootApplication(scanBasePackages = { "visualnut.challenge.ex2Application" })
 public class Ex2Application {
 
     public static void main(String[] args) {

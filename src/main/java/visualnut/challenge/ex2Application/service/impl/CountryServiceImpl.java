@@ -1,4 +1,4 @@
-package visualnut.challenge.ex2.service.impl;
+package visualnut.challenge.ex2Application.service.impl;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -10,8 +10,8 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import visualnut.challenge.ex2.model.Country;
-import visualnut.challenge.ex2.service.CountryService;
+import visualnut.challenge.ex2Application.model.Country;
+import visualnut.challenge.ex2Application.service.CountryService;
 
 @Service
 public class CountryServiceImpl implements CountryService {
