@@ -5,7 +5,7 @@ The following was discovered as part of building this project:
 
 * The original package name ' visualnut.challenge.Ex1' is invalid and this project uses 'visualnut.challenge.Ex1' instead.
 * The original package name ' visualnut.challenge.Ex1' is invalid and this project uses 'visualnut.challenge.Ex1' instead.
-* The Ex2 is located ' visualnut.challenge.apps.Ex2Application' content the rest api. [More about](#Swagger UI)
+* The Ex2 is located ' visualnut.challenge.apps.Ex2Application' content the rest api. [More about](#swagger-ui)
 
 # Getting Started
 
