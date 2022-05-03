@@ -29,7 +29,7 @@ public class CountryController {
 
     @GetMapping("/count")
     public ResponseEntity<Integer> count() {
-        return restHelper.ok(countryService.findAll().size());
+        return restHelper.ok(countryService.count());
     }
 
     @GetMapping("/languages/{lang}/most-official")

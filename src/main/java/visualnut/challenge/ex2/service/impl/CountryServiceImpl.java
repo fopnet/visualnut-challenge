@@ -28,6 +28,11 @@ public class CountryServiceImpl implements CountryService {
     }
 
     @Override
+    public int count() {
+        return countries.size();
+    }
+
+    @Override
     public Country findMostOfficialLanguage(String lang) {
         return this.countries.stream().filter(c -> c.getLanguages().indexOf(lang) >= 0)
                 .max(Comparator.comparingInt(c -> c.getLanguages().size())).orElse(null);

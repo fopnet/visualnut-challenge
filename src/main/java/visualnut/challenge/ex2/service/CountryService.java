@@ -35,4 +35,10 @@ public interface CountryService {
      */
     List<String> findTheMostCommonOfficialLanguageInTheWorld();
 
+    /**
+     * Return the amount of countries
+     * @return
+     */
+    int count();
+
 }
