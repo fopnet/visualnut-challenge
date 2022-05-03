@@ -3,18 +3,13 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name ' visualnut.challenge.Ex1' is invalid and this project uses 'visualnut.challenge.Ex1' instead.
-* The original package name ' visualnut.challenge.Ex1' is invalid and this project uses 'visualnut.challenge.Ex1' instead.
-* The Ex2 is located ' visualnut.challenge.apps.Ex2Application' content the rest api. [More about](#swagger-ui)
+* The first approach of Ex1 'visualnut.challenge.apps.Ex1' is a console program using Chain of responsability design pattern.
+* The second approach of Ex1 is 'visualnut.challenge.apps.Ex1Application' with reduced code avoiding conditionals keywords using Spring Boot Application
+* The Ex2 is located ' visualnut.challenge.apps.Ex2Application' content the rest api. [See swagger apis](#swagger-ui)
 
 # Getting Started
-
-### Reference Documentation
-For further reference, please consider the following sections:
-
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.6.7/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.6.7/maven-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.6.7/reference/htmlsingle/#boot-features-developing-web-applications)
+* runEx1.sh - Java main program, printing the results in console
+* runEx1Application.sh - run a Spring Boot Application, printing the results in console
+* runEx2Application.sh - up the Spring Boot Application Server 
 ### Swagger UI
 - http://localhost:8080/swagger-ui.html

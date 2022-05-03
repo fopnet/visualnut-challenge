@@ -20,7 +20,7 @@ public class CountryController {
     private CountryService countryService;
 
     @Autowired
-    private RestHelper restHelper;
+    private ResponseHelper restHelper;
 
     @GetMapping
     public ResponseEntity<List<Country>> countries() {
