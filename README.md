@@ -1,10 +1,10 @@
 # visualnut-challenge
 
 # Read Me First
-The following was discovered as part of building this project:
+Project description:
 
-* The first approach of Ex1 'visualnut.challenge.apps.Ex1' is a console program using Chain of responsability design pattern.
-* The second approach of Ex1 is 'visualnut.challenge.apps.Ex1Application' with reduced code avoiding conditionals keywords using Spring Boot Application
+* The first approach of Ex1 'visualnut.challenge.apps.Ex1' is a console program using Chain of responsibility design pattern.
+* The second approach of Ex1 is 'visualnut.challenge.apps.Ex1Application' with reduced code avoiding conditionals keywords "if" using Spring Boot Application
 * The Ex2 is located ' visualnut.challenge.apps.Ex2Application' content the rest api. [See swagger apis](#swagger-ui)
 
 # Getting Started
