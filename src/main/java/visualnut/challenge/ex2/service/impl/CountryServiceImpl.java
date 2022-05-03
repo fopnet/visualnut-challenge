@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import visualnut.challenge.ex2.model.entity.Country;
+import visualnut.challenge.ex2.model.Country;
 import visualnut.challenge.ex2.service.CountryService;
 
 @Service

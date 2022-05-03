@@ -13,17 +13,13 @@ import lombok.extern.slf4j.Slf4j;
 import visualnut.challenge.ex1Application.PredicateEvaludatorList;
 
 @Configuration
-@SpringBootApplication(scanBasePackages = { "visualnut.challenge.apps.ex1Application" })
+@SpringBootApplication(scanBasePackageClasses = {
+		Ex1Application.class }, scanBasePackages = "visualnut.challenge.ex1Application")
 @Slf4j
 public class Ex1Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Ex1Application.class, args).close();
-	}
-
-	@Bean
-	public PredicateEvaludatorList predicateEvaludatorList() {
-		return new PredicateEvaludatorList();
 	}
 
 	@Bean

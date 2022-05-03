@@ -16,7 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import visualnut.challenge.apps.Ex2Application;
-import visualnut.challenge.ex2.model.entity.Country;
+import visualnut.challenge.ex2.model.Country;
 import visualnut.challenge.ex2.service.impl.CountryServiceImpl;
 
 @ExtendWith(SpringExtension.class)

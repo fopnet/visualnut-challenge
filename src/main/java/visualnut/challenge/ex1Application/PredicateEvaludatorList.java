@@ -3,6 +3,9 @@ package visualnut.challenge.ex1Application;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PredicateEvaludatorList {
     private List<PredicateEvaluator> evaluators;
 

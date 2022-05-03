@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import visualnut.challenge.ex2.model.entity.Country;
+import visualnut.challenge.ex2.model.Country;
 import visualnut.challenge.ex2.service.CountryService;
 
 @RestController
